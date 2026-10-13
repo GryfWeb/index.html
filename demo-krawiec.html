@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pracownia Krawiecka Nić | Poprawki i szycie na miarę</title>
+<meta name="description" content="Pracownia Krawiecka Nić: skracanie, zwężanie, poprawki sukni ślubnych i garnitury szyte na miarę.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f6f4;--ink:#1b2a41;--tape:#f2c230;--mut:#586274;--d:"Fraunces",Georgia,serif;--b:"Figtree",system-ui,sans-serif;--p:clamp(1.25rem,6vw,4rem)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.08rem/1.65 var(--b)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem var(--p)}
+.logo{font:600 1.5rem var(--d);text-decoration:none}
+.btn{display:inline-block;padding:.85rem 1.6rem;background:var(--ink);color:#fff;font-weight:600;text-decoration:none;border-radius:4px;transition:background .2s,color .2s}
+.btn:hover{background:var(--tape);color:var(--ink)}
+/* miara krawiecka */
+.tape{height:34px;background:var(--tape);background-image:linear-gradient(90deg,var(--ink) 0 2px,transparent 2px),linear-gradient(90deg,var(--ink) 0 1px,transparent 1px);background-size:50px 22px,10px 12px;background-repeat:repeat-x;background-position:0 0,0 0}
+.hero{padding:clamp(3rem,9vw,6rem) var(--p);max-width:64rem}
+h1{font:600 clamp(2.6rem,9vw,5.2rem)/1 var(--d);margin:0 0 1.25rem}
+h1 span{background:linear-gradient(transparent 62%,var(--tape) 62%)}
+.lead{font-size:1.2rem;max-width:36ch;margin:0 0 1.75rem;color:var(--mut)}
+section{padding:clamp(2.5rem,7vw,4.5rem) var(--p);max-width:64rem}
+h2{font:600 clamp(1.9rem,5vw,2.7rem) var(--d);margin:0 0 1.5rem}
+.prices{list-style:none;margin:0;padding:0;max-width:36rem}
+.prices li{display:flex;gap:.75rem;align-items:baseline;padding:.65rem 0}
+.prices li::after{content:"";order:1;flex:1;border-bottom:2px dotted #b4bac6}
+.prices b{order:2}
+.note{color:var(--mut);margin-top:1rem;font-size:.98rem}
+.info{background:var(--ink);color:#fff;max-width:none}
+.info-in{max-width:64rem;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.info h3{font:600 1.3rem var(--d);color:var(--tape);margin:0 0 .5rem}
+.info p{margin:0}
+.info .btn{background:var(--tape);color:var(--ink);margin-top:1rem}
+.info .btn:hover{background:#fff}
+footer{padding:1.5rem var(--p);color:var(--mut);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#">Krawiec Nić</a>
+  <a class="btn" href="tel:+48123456789">Zadzwoń</a>
+</header>
+<div class="tape" role="presentation"></div>
+
+<main>
+  <div class="hero">
+    <h1>Dopasujemy. <span>Skrócimy.</span> Uszyjemy.</h1>
+    <p class="lead">Poprawki ubrań, suknie ślubne i garnitury szyte na miarę. Miarka, igła i dwadzieścia lat doświadczenia.</p>
+    <a class="btn" href="tel:+48123456789">Umów przymiarkę</a>
+  </div>
+
+  <section id="cennik">
+    <h2>Cennik</h2>
+    <ul class="prices">
+      <li><span>Skrócenie spodni</span><b>35 zł</b></li>
+      <li><span>Wszycie zamka</span><b>40 zł</b></li>
+      <li><span>Zwężenie marynarki</span><b>120 zł</b></li>
+      <li><span>Wymiana podszewki</span><b>150 zł</b></li>
+      <li><span>Poprawki sukni ślubnej</span><b>od 200 zł</b></li>
+      <li><span>Garnitur szyty na miarę</span><b>od 1800 zł</b></li>
+    </ul>
+    <p class="note">Drobne poprawki zwykle robimy w 2–3 dni. Dokładną cenę podajemy po przymiarce.</p>
+  </section>
+
+  <section class="info" id="kontakt">
+    <div class="info-in">
+      <div><h3>Godziny</h3><p>Pon–Pt 10:00–18:00<br>Sob 10:00–14:00</p></div>
+      <div><h3>Adres</h3><p>ul. Przykładowa 3<br>00-000 Miasto</p></div>
+      <div><h3>Telefon</h3><p>Zadzwoń lub wpadnij bez umawiania.</p><a class="btn" href="tel:+48123456789">123 456 789</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>Strona demonstracyjna · projekt GryfWeb</footer>
+</body>
+</html>
